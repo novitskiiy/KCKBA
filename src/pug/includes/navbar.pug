@@ -1,0 +1,57 @@
+nav.navbar.navbar-expand-lg.navbar-dark.bg-dark
+    .container.px-5
+        a.navbar-brand(href='index.html')
+            img(src='assets/logo.png', alt='Company Logo', style='height: 40px;')
+        button.navbar-toggler(type='button', data-bs-toggle='collapse', data-bs-target='#navbarSupportedContent', aria-controls='navbarSupportedContent', aria-expanded='false', aria-label='Toggle navigation')
+            span.navbar-toggler-icon
+        #navbarSupportedContent.collapse.navbar-collapse
+            ul.navbar-nav.ms-auto.mb-2.mb-lg-0
+                li.nav-item
+                    a.nav-link(href='index.html') Головна
+                li.nav-item.dropdown
+                    a#navbarDropdownProducts.nav-link.dropdown-toggle(href='#', role='button', data-bs-toggle='dropdown', aria-expanded='false')
+                        | Продукція
+                    ul.dropdown-menu.dropdown-menu-end(aria-labelledby='navbarDropdownProducts')
+                        li
+                            a.dropdown-item(href='products-npp.html') Арматура для АЕС
+                        li
+                            a.dropdown-item(href='products-tpp.html') Арматура для ТЕС
+                        li
+                            a.dropdown-item(href='products-oil-gas.html') Нафтогазова галузь
+                        li
+                            a.dropdown-item(href='products-water.html') Для водоканалів
+                        li
+                            a.dropdown-item(href='products-industrial.html') Загальнопромислова арматура
+                        li
+                            a.dropdown-item(href='products-aviation.html') Авіаційні агрегати
+                        li
+                            a.dropdown-item(href='products-space.html') Космічні агрегати
+                        li
+                            a.dropdown-item(href='products-special.html') Спеціальна техніка
+                        li
+                            a.dropdown-item(href='products-services.html') Послуги
+                        li
+                            a.dropdown-item(href='products-catalogs.html') Каталоги
+                li.nav-item.dropdown
+                    a#navbarDropdownCompany.nav-link.dropdown-toggle(href='#', role='button', data-bs-toggle='dropdown', aria-expanded='false')
+                        | Про компанію
+                    ul.dropdown-menu.dropdown-menu-end(aria-labelledby='navbarDropdownCompany')
+                        li
+                            a.dropdown-item(href='company-who-we-are.html') Хто ми
+                        li
+                            a.dropdown-item(href='company-certificates.html') Сертифікати
+                        li
+                            a.dropdown-item(href='company-faces.html') Обличчя підприємства
+                        li
+                            a.dropdown-item(href='company-history.html') Історія
+                        li
+                            a.dropdown-item(href='company-tour.html') Онлайн-екскурсія
+                li.nav-item
+                    a.nav-link(href='vacancies.html') Вакансії
+                li.nav-item
+                    a.nav-link(href='news.html') Новини
+                li.nav-item
+                    a.nav-link(href='contact.html') Контакти
+            div.d-flex
+                button.btn.btn-outline-light.me-2(type='button') ENG
+                button.btn.btn-outline-light(type='button') УКР

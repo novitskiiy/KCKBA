@@ -1,0 +1,39 @@
+doctype html
+html(lang='en')
+
+    head
+        meta(charset='utf-8')
+        meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+        meta(name='description', content='')
+        meta(name='author', content='Bogdan Veremienko')
+        title Новини
+        link(rel='icon', type='image/x-icon', href='assets/favicon.ico')
+        link(rel='icon', type='image/png', href='assets/logo.png')
+        include includes/css.pug
+    body.d-flex.flex-column.h-100
+        main.flex-shrink-0
+            include includes/navbar.pug
+            // Page content
+            section.py-5
+                .container.px-5
+                    h1.fw-bolder.fs-3.mb-4 Новини
+                    .row.gx-5
+                        each val, i in [1,2,3,4,5]
+                            .col-lg-4.mb-5
+                                .card.h-100.shadow.border-0
+                                    img.card-img-top(src='https://dummyimage.com/600x350/ced4da/6c757d', alt='...')
+                                    .card-body.p-4
+                                        .badge.bg-primary.bg-gradient.rounded-pill.mb-2 News
+                                        a.text-decoration-none.link-dark.stretched-link(href='#')
+                                            h5.card-title.mb-3 Заголовок новини
+                                        p.card-text.mb-0
+                                            | Короткий опис новини або анонс...
+                                    .card-footer.p-4.pt-0.bg-transparent.border-top-0
+                                        .d-flex.align-items-end.justify-content-between
+                                            .d-flex.align-items-center
+                                                img.rounded-circle.me-3(src='https://dummyimage.com/40x40/ced4da/6c757d', alt='...')
+                                                .small
+                                                    .fw-bold Автор
+                                                    .text-muted 01.01.2024 &middot; 5 хв читання
+        include includes/footer.pug
+        include includes/scripts.pug 

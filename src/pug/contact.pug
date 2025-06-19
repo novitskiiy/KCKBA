@@ -1,0 +1,59 @@
+doctype html
+html(lang='en')
+
+    head
+
+        meta(charset='utf-8')
+        meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+        meta(name='description', content='')
+        meta(name='author', content='Bogdan Veremienko')
+
+        title Контакти
+
+        // Favicon
+        link(rel='icon', type='image/png', href='assets/logo.png')
+
+        include includes/css.pug
+
+    body.d-flex.flex-column.h-100
+
+        main.flex-shrink-0
+
+            // Navigation
+            include includes/navbar.pug
+
+            // Page content
+            section.py-5
+
+                .container.px-5
+
+                    h1.fw-bolder.fs-3.mb-4 Контакти
+                    .row.gx-5.justify-content-center
+                        .col-lg-6.col-xl-5
+                            .card.shadow.border-0
+                                .card-body.p-4
+                                    h2.fw-bolder.mb-3.text-primary Контакти головного офісу ПрАТ "КЦКБА"
+                                    ul.list-unstyled.mb-4
+                                        li.mb-2
+                                            i.bi.bi-geo-alt-fill.text-primary.me-2
+                                            | Адреса: 03113, Україна, м. Київ, вул. Грушецька, 9
+                                        li.mb-2
+                                            i.bi.bi-telephone-fill.text-primary.me-2
+                                            | Телефон: +38(050)-447-97-99
+                                        li.mb-2
+                                            i.bi.bi-envelope-fill.text-primary.me-2
+                                            | Email: 
+                                            a(href='mailto:office@kcdbv.com') office@kcdbv.com
+                                    h3.fw-bolder.mb-3.text-primary Робочий графік
+                                    ul.list-unstyled
+                                        li.mb-2
+                                            i.bi.bi-calendar-week.text-primary.me-2
+                                            | Понеділок - П'ятниця: 8:00 - 16:45
+                                        li
+                                            i.bi.bi-calendar-x.text-primary.me-2
+                                            | Субота - Неділя: Вихідний
+
+        // Footer
+        include includes/footer.pug
+
+        include includes/scripts.pug
