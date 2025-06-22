@@ -1,9 +1,14 @@
 nav.navbar.navbar-expand-lg.navbar-dark.bg-dark
     .container.px-5
-        a.navbar-brand(href='index.html')
-            img(src='assets/logo.png', alt='Company Logo', style='height: 40px;')
-        button.navbar-toggler(type='button', data-bs-toggle='collapse', data-bs-target='#navbarSupportedContent', aria-controls='navbarSupportedContent', aria-expanded='false', aria-label='Toggle navigation')
-            span.navbar-toggler-icon
+        .d-flex.align-items-center.w-100.flex-row
+            a.navbar-brand(href='index.html')
+                img(src='assets/logo.jpg', alt='Company Logo', style='height: 40px;')
+            span.d-block.d-lg-none.text-white.flex-grow-1.text-center.ms-2.me-2(style='font-weight: bold; font-size: 0.85rem; line-height: 1.1; max-width: 90vw; white-space: normal;')
+                | Київське центральне конструкторське
+                br
+                | бюро арматуробудування
+            button.navbar-toggler.ms-auto(type='button', data-bs-toggle='collapse', data-bs-target='#navbarSupportedContent', aria-controls='navbarSupportedContent', aria-expanded='false', aria-label='Toggle navigation')
+                span.navbar-toggler-icon
         #navbarSupportedContent.collapse.navbar-collapse
             ul.navbar-nav.ms-auto.mb-2.mb-lg-0
                 li.nav-item
@@ -53,5 +58,3 @@ nav.navbar.navbar-expand-lg.navbar-dark.bg-dark
                 li.nav-item
                     a.nav-link(href='contact.html') Контакти
             div.d-flex
-                button.btn.btn-outline-light.me-2(type='button') ENG
-                button.btn.btn-outline-light(type='button') УКР

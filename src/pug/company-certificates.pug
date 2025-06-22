@@ -1,6 +1,5 @@
 doctype html
-html(lang='en')
-
+html(lang='uk')
     head
         meta(charset='utf-8')
         meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
@@ -8,15 +7,51 @@ html(lang='en')
         meta(name='author', content='Bogdan Veremienko')
         title Сертифікати
         link(rel='icon', type='image/x-icon', href='assets/favicon.ico')
-        link(rel='icon', type='image/png', href='assets/logo.png')
+        link(rel='icon', type='image/png', href='assets/logo.jpg')
         include includes/css.pug
     body.d-flex.flex-column.h-100
         main.flex-shrink-0
             include includes/navbar.pug
-            // Page content
             section.py-5
-                .container.px-5
-                    h1.fw-bolder.fs-3.mb-4 Сертифікати
-                    p Content for Сертифікати page.
+                .container
+                    h4.fw-bold.mb-3 Наші сертифікати
+                    hr(style='border-top:2px solid #ffc107; width:100px; margin-left:0;')
+                    .row.row-cols-2.row-cols-md-4.g-4
+                        .col
+                            .border.rounded.bg-white.d-flex.align-items-center.justify-content-center(style='height:320px;')
+                                img.img-fluid.max-h-100(src='assets/Свідоцтво про визнання постачальника Антонов_до 08.04.2026.png', alt='Сертифікат 1', style='max-height:300px;')
+                        .col
+                            .border.rounded.bg-white.d-flex.align-items-center.justify-content-center(style='height:320px;')
+                                img.img-fluid.max-h-100(src='assets/Certificate ISO 9001-2015_18.12.2027_ua.png', alt='Сертифікат 2', style='max-height:300px;')
+                        .col
+                            .border.rounded.bg-white.d-flex.align-items-center.justify-content-center(style='height:320px;')
+                                img.img-fluid.max-h-100(src='assets/Certificate ISO 14001-2015_10.02.2028_ua.png', alt='Сертифікат 3', style='max-height:300px;')
+                        .col
+                            .border.rounded.bg-white.d-flex.align-items-center.justify-content-center(style='height:320px;')
+                                img.img-fluid.max-h-100(src='assets/Certificate ISO 45001-2018_07.03.2028_ua.png', alt='Сертифікат 4', style='max-height:300px;')
+                        .col
+                            .border.rounded.bg-white.d-flex.align-items-center.justify-content-center(style='height:320px;')
+                                img.img-fluid.max-h-100(src='assets/24123_HAF604 Design_31.03.2030.png', alt='Сертифікат 5', style='max-height:300px;')
+                        .col
+                            .border.rounded.bg-white.d-flex.align-items-center.justify-content-center(style='height:320px;')
+                                img.img-fluid.max-h-100(src='assets/24124_HAF604 Manufacturing_31.03.2030.png', alt='Сертифікат 6', style='max-height:300px;')
+                        .col
+                            .border.rounded.bg-white.d-flex.align-items-center.justify-content-center(style='height:320px;')
+                                img.img-fluid.max-h-100(src='assets/tild3432-3037-4866-b462-623263306335__noroot.png', alt='Сертифікат 7', style='max-height:300px;')
+                        .col
+                            .border.rounded.bg-white.d-flex.align-items-center.justify-content-center(style='height:320px;')
+                                img.img-fluid.max-h-100(src='assets/tild3862-3534-4365-a435-613139616133__222222-----1007.png', alt='Сертифікат 8', style='max-height:300px;')
+                        .col
+                            .border.rounded.bg-white.d-flex.align-items-center.justify-content-center(style='height:320px;')
+                                img.img-fluid.max-h-100(src='assets/tild3338-6331-4263-b064-353764303862____-_003026-22_page-0.jpg', alt='Сертифікат 9', style='max-height:300px;')
+                        .col
+                            .border.rounded.bg-white.d-flex.align-items-center.justify-content-center(style='height:320px;')
+                                img.img-fluid.max-h-100(src='assets/tild3436-3932-4336-b965-356362353935____-_003026-22_page-0.jpg', alt='Сертифікат 10', style='max-height:300px;')
+                        .col
+                            .border.rounded.bg-white.d-flex.align-items-center.justify-content-center(style='height:320px;')
+                                img.img-fluid.max-h-100(src='assets/tild3463-6463-4133-a266-613239663162__exporting.jpg', alt='Сертифікат 11', style='max-height:300px;')
+                        .col
+                            .border.rounded.bg-white.d-flex.align-items-center.justify-content-center(style='height:320px;')
+                                img.img-fluid.max-h-100(src='assets/tild3666-6264-4133-b931-646531383766___.jpg', alt='Сертифікат 12', style='max-height:300px;')
         include includes/footer.pug
         include includes/scripts.pug 
