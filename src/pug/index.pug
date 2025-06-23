@@ -54,13 +54,19 @@ html(lang='en')
                                     br
                                     | Проведення технічного контролю, діагностики та кваліфікаційних випробувань обладнання для АЕС та інших відповідальних об'єктів на базі діагностичного обладнання і спеціальних випробувальних стендів.
                         .col-lg-6
-                            // Слайдер (заглушка)
+                            // Слайдер с реальными фото
                             #mainDirectionsCarousel.carousel.slide(data-bs-ride='carousel')
                                 .carousel-inner
                                     .carousel-item.active
-                                        img.d-block.w-100.rounded(src='https://dummyimage.com/600x400/cccccc/333333&text=Фото+виробництва', alt='...')
+                                        img.d-block.w-100.rounded(src='assets/waymain1.jpg', alt='Фото 1')
                                     .carousel-item
-                                        img.d-block.w-100.rounded(src='https://dummyimage.com/600x400/cccccc/333333&text=Фото+цеху', alt='...')
+                                        img.d-block.w-100.rounded(src='assets/waymain2.jpg', alt='Фото 2')
+                                    .carousel-item
+                                        img.d-block.w-100.rounded(src='assets/waymain3.jpg', alt='Фото 3')
+                                    .carousel-item
+                                        img.d-block.w-100.rounded(src='assets/waymain4.jpg', alt='Фото 4')
+                                    .carousel-item
+                                        img.d-block.w-100.rounded(src='assets/waymain5.jpg', alt='Фото 5')
                                 button.carousel-control-prev(type='button', data-bs-target='#mainDirectionsCarousel', data-bs-slide='prev')
                                     span.carousel-control-prev-icon(aria-hidden='true')
                                     span.visually-hidden Previous
@@ -73,9 +79,56 @@ html(lang='en')
                 .container.px-5.my-5
                     h2.fw-bold.text-center.mb-5 Наші замовники
                     .row.row-cols-2.row-cols-sm-3.row-cols-md-4.row-cols-lg-6.g-4.justify-content-center
-                        each i in Array(18).fill(0)
-                            .col.d-flex.align-items-center.justify-content-center
-                                img.img-fluid(src=`https://dummyimage.com/120x60/eeeeee/333333&text=Logo+${i+1}`, alt=`Logo ${i+1}`)
+                        .col.d-flex.align-items-center.justify-content-center
+                            img.img-fluid(src='assets/customer (1).png', alt='Customer Logo 1')
+                        .col.d-flex.align-items-center.justify-content-center
+                            img.img-fluid(src='assets/customer (2).png', alt='Customer Logo 2')
+                        .col.d-flex.align-items-center.justify-content-center
+                            img.img-fluid(src='assets/customer (3).png', alt='Customer Logo 3')
+                        .col.d-flex.align-items-center.justify-content-center
+                            img.img-fluid(src='assets/customer (4).png', alt='Customer Logo 4')
+                        .col.d-flex.align-items-center.justify-content-center
+                            img.img-fluid(src='assets/customer (5).png', alt='Customer Logo 5')
+                        .col.d-flex.align-items-center.justify-content-center
+                            img.img-fluid(src='assets/customer (6).png', alt='Customer Logo 6')
+                        .col.d-flex.align-items-center.justify-content-center
+                            img.img-fluid(src='assets/customer (7).png', alt='Customer Logo 7')
+                        .col.d-flex.align-items-center.justify-content-center
+                            img.img-fluid(src='assets/customer (8).png', alt='Customer Logo 8')
+                        .col.d-flex.align-items-center.justify-content-center
+                            img.img-fluid(src='assets/customer (9).png', alt='Customer Logo 9')
+                        .col.d-flex.align-items-center.justify-content-center
+                            img.img-fluid(src='assets/customer (10).png', alt='Customer Logo 10')
+                        .col.d-flex.align-items-center.justify-content-center
+                            img.img-fluid(src='assets/customer (11).png', alt='Customer Logo 11')
+                        .col.d-flex.align-items-center.justify-content-center
+                            img.img-fluid(src='assets/customer (12).png', alt='Customer Logo 12')
+                        .col.d-flex.align-items-center.justify-content-center
+                            img.img-fluid(src='assets/customer (13).png', alt='Customer Logo 13')
+                        .col.d-flex.align-items-center.justify-content-center
+                            img.img-fluid(src='assets/customer (14).png', alt='Customer Logo 14')
+                        .col.d-flex.align-items-center.justify-content-center
+                            img.img-fluid(src='assets/customer (15).png', alt='Customer Logo 15')
+                        .col.d-flex.align-items-center.justify-content-center
+                            img.img-fluid(src='assets/customer (16).png', alt='Customer Logo 16')
+                        .col.d-flex.align-items-center.justify-content-center
+                            img.img-fluid(src='assets/customer (17).png', alt='Customer Logo 17')
+                        .col.d-flex.align-items-center.justify-content-center
+                            img.img-fluid(src='assets/customer (18).png', alt='Customer Logo 18')
+                        .col.d-flex.align-items-center.justify-content-center
+                            img.img-fluid(src='assets/customer (19).png', alt='Customer Logo 19')
+                        .col.d-flex.align-items-center.justify-content-center
+                            img.img-fluid(src='assets/customer (20).png', alt='Customer Logo 20')
+                        .col.d-flex.align-items-center.justify-content-center
+                            img.img-fluid(src='assets/customer (21).png', alt='Customer Logo 21')
+                        .col.d-flex.align-items-center.justify-content-center
+                            img.img-fluid(src='assets/customer (22).png', alt='Customer Logo 22')
+                        .col.d-flex.align-items-center.justify-content-center
+                            img.img-fluid(src='assets/customer (23).png', alt='Customer Logo 23')
+                        .col.d-flex.align-items-center.justify-content-center
+                            img.img-fluid(src='assets/customer (2).jpg', alt='Customer Logo 24')
+                        .col.d-flex.align-items-center.justify-content-center
+                            img.img-fluid(src='assets/customer (1).jpg', alt='Customer Logo 25')
 
         // Footer
         include includes/footer.pug
