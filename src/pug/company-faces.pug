@@ -7,7 +7,6 @@ html(lang='en')
         meta(name='description', content='')
         meta(name='author', content='Bogdan Veremienko')
         title Обличчя підприємства
-        link(rel='icon', type='image/x-icon', href='assets/favicon.ico')
         link(rel='icon', type='image/png', href='assets/logo.jpg')
         include includes/css.pug
     body.d-flex.flex-column.h-100
@@ -17,6 +16,15 @@ html(lang='en')
             section.py-5
                 .container.px-5
                     h1.fw-bolder.fs-3.mb-4 Обличчя підприємства
-                    p Content for Обличчя підприємства page.
+                    .d-flex.flex-column.align-items-center.gap-5
+                        .text-center.mb-5
+                            img.rounded-circle.mb-3(src='assets/khizhnyak.jpg', alt='Хижняк Дмитро Миколайович', style='width: 260px; height: 260px; object-fit: cover; border: 4px solid #eee;')
+                            h3.fw-bold.mt-3.mb-1 Хижняк Дмитро Миколайович
+                            .text-muted Генеральний директор
+                        hr.my-4.w-100(style='max-width: 900px;')
+                        .text-center.mt-5
+                            img.rounded-circle.mb-3(src='assets/novikova.jpg', alt='Новікова Надія Іванівна', style='width: 260px; height: 260px; object-fit: cover; border: 4px solid #eee;')
+                            h3.fw-bold.mt-3.mb-1 Новікова Надія Іванівна
+                            .text-muted Заступник генерального директора з ФЕП
         include includes/footer.pug
         include includes/scripts.pug 
