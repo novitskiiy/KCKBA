@@ -12,6 +12,77 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+        <style>
+            .tour-section {
+                background: #f8fafc;
+                border-radius: 24px;
+                box-shadow: 0 2px 16px 0 rgba(44,62,80,0.06);
+                padding: 40px 32px 32px 32px;
+                margin-bottom: 48px;
+                transition: box-shadow 0.2s;
+            }
+            .tour-section:hover {
+                box-shadow: 0 8px 32px 0 rgba(44,62,80,0.13);
+            }
+            .tour-section h2 {
+                font-size: 2rem;
+                color: #23408e;
+                font-weight: 700;
+                margin-bottom: 28px;
+                border-bottom: 2px solid #e0e7ef;
+                padding-bottom: 10px;
+            }
+            .tour-photo {
+                height: 420px;
+                object-fit: cover;
+                width: 100%;
+                border-radius: 20px;
+                box-shadow: 0 8px 32px 0 rgba(44,62,80,0.18);
+                transition: transform 0.25s, box-shadow 0.25s, opacity 0.5s;
+                opacity: 0;
+                animation: fadeInPhoto 0.8s forwards;
+            }
+            .tour-photo-wide {
+                height: 420px;
+                width: 100%;
+                object-fit: cover;
+                border-radius: 20px;
+                box-shadow: 0 8px 32px 0 rgba(44,62,80,0.18);
+                transition: transform 0.25s, box-shadow 0.25s, opacity 0.5s;
+                opacity: 0;
+                animation: fadeInPhoto 0.8s forwards;
+            }
+            .tour-photo:hover, .tour-photo-wide:hover {
+                transform: scale(1.04) rotate(-1deg);
+                box-shadow: 0 16px 48px 0 rgba(44,62,80,0.22);
+                z-index: 2;
+            }
+            .tour-photo-col {
+                margin-bottom: 32px;
+            }
+            .tour-section p {
+                font-size: 1.15rem;
+                color: #2d3748;
+            }
+            @media (min-width: 992px) {
+                .tour-photo-col.col-6 { flex: 0 0 48%; max-width: 48%; }
+                .tour-photo-col.col-4 { flex: 0 0 31%; max-width: 31%; }
+            }
+            @media (max-width: 991px) {
+                .tour-photo, .tour-photo-wide { height: 320px; }
+                .tour-section { padding: 28px 10px 24px 10px; }
+                .tour-section h2 { font-size: 1.3rem; }
+            }
+            @media (max-width: 767px) {
+                .tour-photo-col { flex: 0 0 100%; max-width: 100%; }
+                .tour-photo, .tour-photo-wide { height: 200px; }
+                .tour-section { padding: 16px 2vw 16px 2vw; }
+            }
+            @keyframes fadeInPhoto {
+                from { opacity: 0; transform: scale(0.97); }
+                to { opacity: 1; transform: scale(1); }
+            }
+        </style>
     </head>
     <body class="d-flex flex-column h-100">
         <main class="flex-shrink-0">
@@ -66,7 +137,278 @@
             <section class="py-5">
                 <div class="container px-5">
                     <h1 class="fw-bolder fs-3 mb-4">Онлайн-екскурсія</h1>
-                    <p>Content for Онлайн-екскурсія page.</p>
+                    <div class="tour-section mb-5">
+                        <h2 class="fw-bold fs-5 border-bottom pb-2 mb-4">Офіс</h2>
+                        <div class="row g-4 align-items-center mb-3">
+                            <div class="col-md-6 tour-photo-col">
+                                <div class="row g-3">
+                                    <div class="col-6">
+                                        <img src="assets/office1.jpg" alt="Офіс 1" class="tour-photo" />
+                                    </div>
+                                    <div class="col-6">
+                                        <img src="assets/office2.jpg" alt="Офіс 2" class="tour-photo" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <p>Для початку пройдемо в наш офіс, ознайомимося з місцем, де приймаються стратегічні рішення і визначається вектор розвитку підприємства.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tour-section mb-5">
+                        <h2 class="fw-bold fs-5 border-bottom pb-2 mb-4">Відділ розробки та проектування</h2>
+                        <div class="row g-4 align-items-center mb-3">
+                            <div class="col-md-6 order-md-2 tour-photo-col">
+                                <div class="row g-3">
+                                    <div class="col-6">
+                                        <img src="assets/office3.jpg" alt="Відділ розробки 1" class="tour-photo" />
+                                    </div>
+                                    <div class="col-6">
+                                        <img src="assets/office4.jpg" alt="Відділ розробки 2" class="tour-photo" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 order-md-1">
+                                <p>Далі ми потрапляємо до відділу конструкторських розробок, де зароджується інженерна думка, створюються моделі, розрахунки та програми випробувань. Все це дозволить створити агрегати, які потім увійдуть до системи безпеки АЕС і ТЕС, системи життєзабезпечення космонавтів і повітряні системи літаків.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tour-section mb-5">
+                        <h2 class="fw-bold fs-5 border-bottom pb-2 mb-4">Склад основних матеріалів</h2>
+                        <div class="row g-4 align-items-center mb-3">
+                            <div class="col-md-6 tour-photo-col">
+                                <div class="row g-3">
+                                    <div class="col-6">
+                                        <img src="assets/sklad1.jpg" alt="Склад основних матеріалів 1" class="tour-photo" />
+                                    </div>
+                                    <div class="col-6">
+                                        <img src="assets/sklad2.jpg" alt="Склад основних матеріалів 2" class="tour-photo" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <p>Більшість наших виробів виготовляється зі сталей - 08Х18Н10Т, 12Х18Н10Т, сталь 20, сплави алюмінію, титану, бронзи, та інших.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tour-section mb-5">
+                        <h2 class="fw-bold fs-5 border-bottom pb-2 mb-4">Ділянка порізки металів</h2>
+                        <div class="row g-4 align-items-center mb-3">
+                            <div class="col-md-6 order-md-2 tour-photo-col">
+                                <div class="row g-3">
+                                    <div class="col-12">
+                                        <img src="assets/poriz.jpg" alt="Склад основних матеріалів 2" class="tour-photo-wide" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 order-md-1">
+                                <p>У технологічному процесі ПрАТ "КЦКБА" використовується металопрокат і поковки. Порізка трубного металу відбувається на автоматичних верстатах.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tour-section mb-5">
+                        <h2 class="fw-bold fs-5 border-bottom pb-2 mb-4">Ділянка термічної обробки</h2>
+                        <div class="row g-4 align-items-center mb-3">
+                            <div class="col-md-6 tour-photo-col">
+                                <div class="row g-3">
+                                    <div class="col-6">
+                                        <img src="assets/term1.jpg" alt="Ділянка термічної обробки 1" class="tour-photo" />
+                                    </div>
+                                    <div class="col-6">
+                                        <img src="assets/term2.jpg" alt="Ділянка термічної обробки 2" class="tour-photo" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <p>Загартування металів для досягнення необхідних фізичних властивостей проходить за допомогою термічних печей - вакуумної, шахтних і ін.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tour-section mb-5">
+                        <h2 class="fw-bold fs-5 border-bottom pb-2 mb-4">Зварювальна ділянка</h2>
+                        <div class="row g-4 align-items-center mb-3">
+                            <div class="col-md-6 order-md-2 tour-photo-col">
+                                <div class="row g-3">
+                                    <div class="col-6">
+                                        <img src="assets/zvar1.jpg" alt="Зварювальна ділянка 1" class="tour-photo" />
+                                    </div>
+                                    <div class="col-6">
+                                        <img src="assets/zvar2.jpg" alt="Зварювальна ділянка 2" class="tour-photo" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 order-md-1">
+                                <p>Для зварювання металів використовується ручне дугове зварювання покритими електродами, ручне аргонодугове зварювання неплавким електродом з присадним матеріалом і без нього, напівавтоматичне зварювання в середовищі захисних газів, автоматичне аргонодугове зварювання самонаплавлюваним електродом, контактне зварювання. Широко використовується лазерне зварювання.
+
+                                    Для наплавлення зносостійких поверхонь використовується ручне дугове зварювання покритими електродами, автоматична наплавка порошковими дротами в середовищі захисних газів і плазмо-порошкове наплавлення в середовищі Ar.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tour-section mb-5">
+                        <h2 class="fw-bold fs-5 border-bottom pb-2 mb-4">Ділянка гальванічних покриттів</h2>
+                        <div class="row g-4 align-items-center mb-3">
+                            <div class="col-md-6 tour-photo-col">
+                                <div class="row g-3">
+                                    <div class="col-12">
+                                        <img src="assets/galv.jpg" alt="Ділянка гальванічних покриттів" class="tour-photo-wide" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <p>Виконуються такі види робіт, як електрополірування нержавіючих сталей, хромування (молочне і тверде), мідь-нікель, електрохімічне і хімічне нікелювання, травлення і пасивація деталей з нержавіючої сталі, травлення і пасивація деталей з міді та її сплавів (латуні), фосфатування, цинкування , анодування алюмінію і його сплавів, ематалювання алюмінію і його сплавів, олов'янування та інше.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tour-section mb-5">
+                        <h2 class="fw-bold fs-5 border-bottom pb-2 mb-4">Ділянка лакофарбових покриттів</h2>
+                        <div class="row g-4 align-items-center mb-3">
+                            <div class="col-md-6 order-md-2 tour-photo-col">
+                                <div class="row g-3">
+                                    <div class="col-6">
+                                        <img src="assets/lak1.jpg" alt="Ділянка лакофарбових покриттів 1" class="tour-photo" />
+                                    </div>
+                                    <div class="col-6">
+                                        <img src="assets/lak2.jpg" alt="Ділянка лакофарбових покриттів 2" class="tour-photo" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 order-md-1">
+                                <p>Здійснює малярні роботи будь-якої складності.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tour-section mb-5">
+                        <h2 class="fw-bold fs-5 border-bottom pb-2 mb-4">Дослідно-експериментальне виробництво</h2>
+                        <div class="row g-4 align-items-center mb-3">
+                            <div class="col-md-6 tour-photo-col">
+                                <div class="row g-3">
+                                    <div class="col-4">
+                                        <img src="assets/doslid1.jpg" alt="Дослідно-експериментальне виробництво 1" class="tour-photo" />
+                                    </div>
+                                    <div class="col-4">
+                                        <img src="assets/doslid2.jpg" alt="Дослідно-експериментальне виробництво 2" class="tour-photo" />
+                                    </div>
+                                    <div class="col-4">
+                                        <img src="assets/doslid3.jpg" alt="Дослідно-експериментальне виробництво 3" class="tour-photo" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <p>Виконує механічну обробку, слюсарні роботи малосерійних виробів для авіації і космосу, а також виготовляє спеціальну арматуру, електромагніти, сигналізатори, блоки управління.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tour-section mb-5">
+                        <h2 class="fw-bold fs-5 border-bottom pb-2 mb-4">Механоскладальний цех</h2>
+                        <div class="row g-4 align-items-center mb-3">
+                            <div class="col-md-6 order-md-2 tour-photo-col">
+                                <div class="row g-3">
+                                    <div class="col-4">
+                                        <img src="assets/meh1.jpg" alt="Механоскладальний цех 1" class="tour-photo" />
+                                    </div>
+                                    <div class="col-4">
+                                        <img src="assets/meh2.jpg" alt="Механоскладальний цех 2" class="tour-photo" />
+                                    </div>
+                                    <div class="col-4">
+                                        <img src="assets/meh3.jpg" alt="Механоскладальний цех 3" class="tour-photo" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 order-md-1">
+                                <p>Спеціалізується на високоточній механічній обробці і збиранні серійних виробів для атомної і теплової енергетики.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tour-section mb-5">
+                        <h2 class="fw-bold fs-5 border-bottom pb-2 mb-4">Центральна лабораторія</h2>
+                        <div class="row g-4 align-items-center mb-3">
+                            <div class="col-md-6 tour-photo-col">
+                                <div class="row g-3">
+                                    <div class="col-6">
+                                        <img src="assets/cen1.jpg" alt="Центральна лабораторія 1" class="tour-photo" />
+                                    </div>
+                                    <div class="col-6">
+                                        <img src="assets/cen2.jpg" alt="Центральна лабораторія 2" class="tour-photo" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <p>Має у своєму розпорядженні сучасне випробувальне обладнання, засоби вимірювання, стандартні зразки, еталони, допоміжне обладнання, що дозволяють здійснювати випробування і вимірювання методами неруйнівного і руйнівного контролю.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tour-section mb-5">
+                        <h2 class="fw-bold fs-5 border-bottom pb-2 mb-4">Випробувальний центр</h2>
+                        <div class="row g-4 align-items-center mb-3">
+                            <div class="col-md-6 order-md-2 tour-photo-col">
+                                <div class="row g-3">
+                                    <div class="col-4">
+                                        <img src="assets/vipr1.jpg" alt="Випробувальний центр 1" class="tour-photo" />
+                                    </div>
+                                    <div class="col-4">
+                                        <img src="assets/vipr2.jpg" alt="Випробувальний центр 2" class="tour-photo" />
+                                    </div>
+                                    <div class="col-4">
+                                        <img src="assets/vipr3.jpg" alt="Випробувальний центр 3" class="tour-photo" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 order-md-1">
+                                <p>Перевіряє працездатність дослідних зразків і готових виробів, в т.ч. в умовах LOCO.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tour-section mb-5">
+                        <h2 class="fw-bold fs-5 border-bottom pb-2 mb-4">Контроль якості</h2>
+                        <div class="row g-4 align-items-center mb-3">
+                            <div class="col-md-6 tour-photo-col">
+                                <div class="row g-3">
+                                    <div class="col-12">
+                                        <img src="assets/control.jpg" alt="Контроль якості" class="tour-photo-wide" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <p>На всіх етапах створення продукції, відповідно до системи менеджменту якості ISO 9001 і галузевих стандартів і норм, особлива увага приділяється контролю якості проектування і виготовлення продукції.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tour-section mb-5">
+                        <h2 class="fw-bold fs-5 border-bottom pb-2 mb-4">Відправка готової продукції замовнику</h2>
+                        <div class="row g-4 align-items-center mb-3">
+                            <div class="col-md-6 order-md-2 tour-photo-col">
+                                <div class="row g-3">
+                                    <div class="col-6">
+                                        <img src="assets/got1.jpg" alt="Відправка готової продукції 1" class="tour-photo" />
+                                    </div>
+                                    <div class="col-6">
+                                        <img src="assets/got2.jpg" alt="Відправка готової продукції 2" class="tour-photo" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 order-md-1">
+                                <p>Наше підприємство працює «під замовлення» і кожна поставка має індивідуальні вимоги до упаковки і переліку супровідної документації.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tour-section mb-5">
+                        <h2 class="fw-bold fs-5 border-bottom pb-2 mb-4">Обслуговування та ремонт</h2>
+                        <div class="row g-4 align-items-center mb-3">
+                            <div class="col-md-6 tour-photo-col">
+                                <div class="row g-3">
+                                    <div class="col-6">
+                                        <img src="assets/remont1.jpg" alt="Обслуговування та ремонт 1" class="tour-photo" />
+                                    </div>
+                                    <div class="col-6">
+                                        <img src="assets/remont2.jpg" alt="Обслуговування та ремонт 2" class="tour-photo" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <p>Вся продукція, що поставляється має термін гарантійного обслуговування, який зазначений в технічних умовах. Наші фахівці завжди готові проконсультувати замовника по телефону або виїхати на об'єкт для проведення комплексної діагностики.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
         </main>
