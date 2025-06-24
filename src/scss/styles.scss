@@ -26,3 +26,160 @@ html {
     background-repeat: no-repeat;
     min-height: 15rem;
 }
+
+// --- Tour Section Styles ---
+.tour-section {
+    background: #f8fafc;
+    border-radius: 24px;
+    box-shadow: 0 2px 16px 0 rgba(44,62,80,0.06);
+    padding: 40px 32px 32px 32px;
+    margin-bottom: 48px;
+    transition: box-shadow 0.2s;
+}
+.tour-section:hover {
+    box-shadow: 0 8px 32px 0 rgba(44,62,80,0.13);
+}
+.tour-section h2 {
+    font-size: 2rem;
+    color: #23408e;
+    font-weight: 700;
+    margin-bottom: 28px;
+    border-bottom: 2px solid #e0e7ef;
+    padding-bottom: 10px;
+}
+.tour-photo {
+    height: 420px;
+    object-fit: cover;
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 8px 32px 0 rgba(44,62,80,0.18);
+    transition: transform 0.25s, box-shadow 0.25s, opacity 0.5s;
+    opacity: 0;
+    animation: fadeInPhoto 0.8s forwards;
+}
+.tour-photo-wide {
+    height: 420px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 8px 32px 0 rgba(44,62,80,0.18);
+    transition: transform 0.25s, box-shadow 0.25s, opacity 0.5s;
+    opacity: 0;
+    animation: fadeInPhoto 0.8s forwards;
+}
+.tour-photo:hover, .tour-photo-wide:hover {
+    transform: scale(1.04) rotate(-1deg);
+    box-shadow: 0 16px 48px 0 rgba(44,62,80,0.22);
+    z-index: 2;
+}
+.tour-photo-col {
+    margin-bottom: 32px;
+}
+.tour-section p {
+    font-size: 1.15rem;
+    color: #2d3748;
+}
+@media (min-width: 992px) {
+    .tour-photo-col.col-6 { flex: 0 0 48%; max-width: 48%; }
+    .tour-photo-col.col-4 { flex: 0 0 31%; max-width: 31%; }
+}
+@media (max-width: 991px) {
+    .tour-photo, .tour-photo-wide { height: 320px; }
+    .tour-section { padding: 28px 10px 24px 10px; }
+    .tour-section h2 { font-size: 1.3rem; }
+}
+@media (max-width: 767px) {
+    .tour-photo-col { flex: 0 0 100%; max-width: 100%; }
+    .tour-photo, .tour-photo-wide { height: 200px; }
+    .tour-section { padding: 16px 2vw 16px 2vw; }
+}
+@keyframes fadeInPhoto {
+    from { opacity: 0; transform: scale(0.97); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+// --- Timeline Vertical Styles ---
+.timeline-vertical {
+    position: relative;
+    margin: 0 auto;
+    padding: 40px 0 40px 0;
+    max-width: 900px;
+}
+.timeline-vertical::before {
+    content: '';
+    position: absolute;
+    top: 0; bottom: 0; left: 50%;
+    width: 4px;
+    background: #23408e;
+    transform: translateX(-50%);
+    z-index: 0;
+}
+.timeline-event {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: relative;
+    margin-bottom: 60px;
+    z-index: 1;
+}
+.timeline-event.right { flex-direction: row-reverse; }
+.timeline-event .timeline-content {
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 4px 24px 0 rgba(44,62,80,0.08);
+    padding: 28px 32px;
+    min-width: 260px;
+    max-width: 380px;
+    position: relative;
+    margin: 0 32px;
+    flex: 1 1 0;
+    animation: fadeInUp 0.8s;
+}
+.timeline-event .timeline-year {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 2;
+}
+.timeline-event .year-circle {
+    background: #23408e;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.2rem;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 8px 0 rgba(44,62,80,0.10);
+    margin-bottom: 10px;
+    border: 4px solid #fff;
+}
+.timeline-event .timeline-icon {
+    font-size: 2rem;
+    color: #ffc107;
+    margin-bottom: 8px;
+}
+@media (max-width: 767px) {
+    .timeline-vertical::before { left: 20px; }
+    .timeline-event, .timeline-event.right {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .timeline-event .timeline-content {
+        margin: 12px 0 0 48px;
+        min-width: 0;
+        max-width: 100%;
+    }
+    .timeline-event .timeline-year {
+        flex-direction: row;
+        margin-left: 0;
+    }
+}
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(40px); }
+    to { opacity: 1; transform: translateY(0); }
+}

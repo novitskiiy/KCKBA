@@ -15,8 +15,98 @@ html(lang='en')
             include includes/navbar.pug
             // Page content
             section.py-5
-                .container.px-5
-                    h1.fw-bolder.fs-3.mb-4 Спеціальна техніка
-                    p Content for Спеціальна техніка page.
+                .container-fluid
+                    .row
+                        // Блок Призначення
+                        .col-lg-3.mb-4.mb-lg-0
+                            .p-4
+                                h4.mb-4(style='color: #00b300;') Призначення:
+                                .d-grid.gap-2
+                                    a.btn.text-center.py-2(href='products-npp.html', style='background: white; border: 1px solid #dee2e6;') Арматура для АЕС
+                                    a.btn.text-center.py-2(href='products-tpp.html', style='background: white; border: 1px solid #dee2e6;') Арматура для ТЕС
+                                    a.btn.text-center.py-2(href='products-oil-gas.html', style='background: white; border: 1px solid #dee2e6;') Нафтогазова галузь
+                                    a.btn.text-center.py-2(href='products-industrial.html', style='background: white; border: 1px solid #dee2e6;') Загальнопромислова
+                                    a.btn.text-center.py-2(href='products-water.html', style='background: white; border: 1px solid #dee2e6;') Для водоканалів
+                                    a.btn.text-center.py-2(href='products-aviation.html', style='background: white; border: 1px solid #dee2e6;') Для авіації
+                                    a.btn.text-center.py-2(href='products-space.html', style='background: white; border: 1px solid #dee2e6;') Для космосу
+                                    a.btn.text-center.py-2(href='products-special.html', style='background: white; border: 1px solid #dee2e6;') Спеціальна техніка
+                                    a.btn.text-center.py-2(href='products-services.html', style='background: white; border: 1px solid #dee2e6;') Послуги
+                                    a.btn.text-center.py-2(href='products-catalogs.html', style='background: white; border: 1px solid #dee2e6;') Каталоги
+                        // Основной контент
+                        .col-lg-9
+                            h1.fw-bolder.fs-1.mb-4.text-center СПЕЦІАЛЬНА ТЕХНІКА
+                            .row.g-4
+                                // Карточка 1
+                                .col-md-6.col-lg-6.col-xl-3
+                                    .card.h-100.shadow-sm
+                                        img.card-img-top(src='assets/spec1.png', alt='Клапан електромагнітний трьохходовий ТХ – 555', style='object-fit: contain; height: 200px;')
+                                        .card-body
+                                            h5.card-title Клапан електромагнітний трьохходовий ТХ – 555
+                                            p.card-text ПРИЗНАЧЕННЯ: Клапан ТХ-555 виготовленний у відповідності з діючею технічною документацією і визнаний гідним для експлуатації у газових турбінах для дистанційного управління пневмоциліндрами.
+                                        .card-footer.bg-transparent.border-0
+                                            a.btn.btn-primary(href='https://drive.google.com/file/d/1oJGza7jQ-qKum4bZWEaXVeCean7DCbfP/view' target='_blank') Детальніше
+                                // Карточка 2
+                                .col-md-6.col-lg-6.col-xl-3
+                                    .card.h-100.shadow-sm
+                                        img.card-img-top(src='assets/spec2.png', alt='Електромагніт', style='object-fit: contain; height: 200px;')
+                                        .card-body
+                                            h5.card-title Електромагніт
+                                            p.card-text ПРИЗНАЧЕННЯ: Призначений для керування потоком робочої середи в агрегатах різних гідравлічних систем.
+                                        .card-footer.bg-transparent.border-0
+                                            a.btn.btn-primary(href='https://drive.google.com/file/d/1UYfd2Y9SBItxqTsN96TxoIjfB_Xyk70B/view' target='_blank') Детальніше
+                                // Карточка 3
+                                .col-md-6.col-lg-6.col-xl-3
+                                    .card.h-100.shadow-sm
+                                        img.card-img-top(src='assets/spec3.png', alt='Електромагніт', style='object-fit: contain; height: 200px;')
+                                        .card-body
+                                            h5.card-title Електромагніт
+                                            p.card-text ПРИЗНАЧЕННЯ: Призначений для керування потоком робочої середи в агрегатах різних гідравлічних систем..
+                                        .card-footer.bg-transparent.border-0
+                                            a.btn.btn-primary(href='https://drive.google.com/file/d/1NZ8whwKN1Erz3XPlaNnjoYwVvDqmz-_Y/view' target='_blank') Детальніше
+                                // Карточка 4
+                                .col-md-6.col-lg-6.col-xl-3
+                                    .card.h-100.shadow-sm
+                                        img.card-img-top(src='assets/spec4.png', alt='Сигналізатор УФ 057.035', style='object-fit: contain; height: 200px;')
+                                        .card-body
+                                            h5.card-title Сигналізатор УФ 057.035
+                                            p.card-text ПРИЗНАЧЕННЯ: Призначений для контролю положення виконавчих механізмів в обладненні атомних станцій.
+                                        .card-footer.bg-transparent.border-0
+                                            a.btn.btn-primary(href='https://drive.google.com/file/d/1s0UcsaEm1VDgG14OtoO21VzSxx7fmjPt/view' target='_blank') Детальніше
+                                // Карточка 5
+                                .col-md-6.col-lg-6.col-xl-3
+                                    .card.h-100.shadow-sm
+                                        img.card-img-top(src='assets/spec5.png', alt='Клапан електромагнітний DN4', style='object-fit: contain; height: 200px;')
+                                        .card-body
+                                            h5.card-title Клапан електромагнітний DN4
+                                            p.card-text ПРИЗНАЧЕННЯ: Призначений для роботи в комплекті з гідро- та пневмо агрегатами та служить для відкриття й закриття каналу робочої середи.
+                                        .card-footer.bg-transparent.border-0
+                                            a.btn.btn-primary(href='https://drive.google.com/file/d/1Q7uj15e60n3y1vGWcOpOG0lnKSeWp4wD/view' target='_blank') Детальніше
+                                // Карточка 6
+                                .col-md-6.col-lg-6.col-xl-3
+                                    .card.h-100.shadow-sm
+                                        img.card-img-top(src='assets/spec6.png', alt='Електромагніт', style='object-fit: contain; height: 200px;')
+                                        .card-body
+                                            h5.card-title Електромагніт
+                                            p.card-text ПРИЗНАЧЕННЯ: Призначений для керування потоком робочої середи в агрегатах різних гідравлічних систем.
+                                        .card-footer.bg-transparent.border-0
+                                            a.btn.btn-primary(href='https://drive.google.com/file/d/1bW-Ji17LLSX7G4WnQn5GtzqasPWSbqfH/view' target='_blank') Детальніше
+                                // Карточка 7
+                                .col-md-6.col-lg-6.col-xl-3
+                                    .card.h-100.shadow-sm
+                                        img.card-img-top(src='assets/spec7.png', alt='Дистанційний показчик положення (ДПП)', style='object-fit: contain; height: 200px;')
+                                        .card-body
+                                            h5.card-title Дистанційний показчик положення (ДПП)
+                                            p.card-text ПРИЗНАЧЕННЯ: Призначений для контролю положення виконавчих механізмів в обладненні атомних станцій.
+                                        .card-footer.bg-transparent.border-0
+                                            a.btn.btn-primary(href='https://drive.google.com/file/d/13Z2WwRdJyjsm5T8INy1ngaqMFHifPp9k/view' target='_blank') Детальніше
+                                // Карточка 8
+                                .col-md-6.col-lg-6.col-xl-3
+                                    .card.h-100.shadow-sm
+                                        img.card-img-top(src='assets/spec8.png', alt='Сигналізатор УФ 057.039', style='object-fit: contain; height: 200px;')
+                                        .card-body
+                                            h5.card-title Сигналізатор УФ 057.039
+                                            p.card-text ПРИЗНАЧЕННЯ: Призначений для контролю положення виконавчих механізмів в обладненні атомних станцій.
+                                        .card-footer.bg-transparent.border-0
+                                            a.btn.btn-primary(href='https://drive.google.com/file/d/1gbgSPH9dWxvCv0fN9lmNTYLxLJW37Uqj/view' target='_blank') Детальніше
         include includes/footer.pug
         include includes/scripts.pug 
