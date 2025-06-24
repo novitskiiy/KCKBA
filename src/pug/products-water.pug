@@ -6,7 +6,7 @@ html(lang='en')
         meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
         meta(name='description', content='')
         meta(name='author', content='Bogdan Veremienko')
-        title Для водоканалів
+        title Арматура для водоканалів
         link(rel='icon', type='image/x-icon', href='assets/favicon.ico')
         link(rel='icon', type='image/png', href='assets/logo.jpg')
         include includes/css.pug
@@ -15,8 +15,41 @@ html(lang='en')
             include includes/navbar.pug
             // Page content
             section.py-5
-                .container.px-5
-                    h1.fw-bolder.fs-3.mb-4 Для водоканалів
-                    p Content for Для водоканалів page.
+                .container-fluid
+                    .row
+                        // Left menu
+                        .col-lg-3.mb-4.mb-lg-0
+                            .p-4
+                                h4.mb-4(style='color: #00b300;') Призначення:
+                                .d-grid.gap-2
+                                    a.btn.text-center.py-2(href='products-npp.html', style='background: white; border: 1px solid #dee2e6;') Арматура для АЕС
+                                    a.btn.text-center.py-2(href='products-tpp.html', style='background: white; border: 1px solid #dee2e6;') Арматура для ТЕС
+                                    a.btn.text-center.py-2(href='products-oil-gas.html', style='background: white; border: 1px solid #dee2e6;') Нафтогазова галузь
+                                    a.btn.text-center.py-2(href='products-industrial.html', style='background: white; border: 1px solid #dee2e6;') Загальнопромислова
+                                    a.btn.text-center.py-2(href='products-water.html', style='background: white; border: 1px solid #dee2e6;') Для водоканалів
+                                    a.btn.text-center.py-2(href='products-aviation.html', style='background: white; border: 1px solid #dee2e6;') Для авіації
+                                    a.btn.text-center.py-2(href='products-space.html', style='background: white; border: 1px solid #dee2e6;') Для космосу
+                                    a.btn.text-center.py-2(href='products-special.html', style='background: white; border: 1px solid #dee2e6;') Спеціальна техніка
+                                    a.btn.text-center.py-2(href='products-services.html', style='background: white; border: 1px solid #dee2e6;') Послуги
+                                    a.btn.text-center.py-2(href='products-catalogs.html', style='background: white; border: 1px solid #dee2e6;') Каталоги
+
+                        // Right content
+                        .col-lg-9
+                            h1.fw-bolder.fs-1.mb-4.text-center Для водоканалів
+                            .d-flex.flex-column.align-items-center.position-relative
+                                // Central circle image
+                                .position-relative.mb-4(style='width: 1000px; height: 1000px;')
+                                    .position-absolute.top-50.start-50.translate-middle
+                                        img(src='assets/main-water.jpg', alt='Арматура для ТЕС', style='width: 600px; height: 600px; object-fit: cover; border-radius: 50%;')
+                                    
+                                    // Left
+                                    .position-absolute(style='top: 50%; left: 20px; transform: translateY(-50%); text-align: center;')
+                                        img(src='assets/zapobizhna4.png', alt='', style='width: 80px; height: 80px; object-fit: contain;')
+                                        .small.mt-2(style='color: #333;') Запобіжна арматура
+                                    
+                                    // Right
+                                    .position-absolute(style='top: 50%; right: 20px; transform: translateY(-50%); text-align: center;')
+                                        img(src='assets/zapirna4.png', alt='', style='width: 80px; height: 80px; object-fit: contain;')
+                                        .small.mt-2(style='color: #333;') Запірна арматура
         include includes/footer.pug
         include includes/scripts.pug 

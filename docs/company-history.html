@@ -12,92 +12,6 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
-        <style>
-            .timeline-vertical {
-                position: relative;
-                margin: 0 auto;
-                padding: 40px 0 40px 0;
-                max-width: 900px;
-            }
-            .timeline-vertical::before {
-                content: '';
-                position: absolute;
-                top: 0; bottom: 0; left: 50%;
-                width: 4px;
-                background: #23408e;
-                transform: translateX(-50%);
-                z-index: 0;
-            }
-            .timeline-event {
-                display: flex;
-                justify-content: flex-start;
-                align-items: flex-start;
-                position: relative;
-                margin-bottom: 60px;
-                z-index: 1;
-            }
-            .timeline-event.right { flex-direction: row-reverse; }
-            .timeline-event .timeline-content {
-                background: #fff;
-                border-radius: 18px;
-                box-shadow: 0 4px 24px 0 rgba(44,62,80,0.08);
-                padding: 28px 32px;
-                min-width: 260px;
-                max-width: 380px;
-                position: relative;
-                margin: 0 32px;
-                flex: 1 1 0;
-                animation: fadeInUp 0.8s;
-            }
-            .timeline-event .timeline-year {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
-                position: relative;
-                z-index: 2;
-            }
-            .timeline-event .year-circle {
-                background: #23408e;
-                color: #fff;
-                font-weight: bold;
-                font-size: 1.2rem;
-                width: 60px;
-                height: 60px;
-                border-radius: 50%;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                box-shadow: 0 2px 8px 0 rgba(44,62,80,0.10);
-                margin-bottom: 10px;
-                border: 4px solid #fff;
-            }
-            .timeline-event .timeline-icon {
-                font-size: 2rem;
-                color: #ffc107;
-                margin-bottom: 8px;
-            }
-            @media (max-width: 767px) {
-                .timeline-vertical::before { left: 20px; }
-                .timeline-event, .timeline-event.right {
-                    flex-direction: column;
-                    align-items: flex-start;
-                }
-                .timeline-event .timeline-content {
-                    margin: 12px 0 0 48px;
-                    min-width: 0;
-                    max-width: 100%;
-                }
-                .timeline-event .timeline-year {
-                    flex-direction: row;
-                    margin-left: 0;
-                }
-            }
-            @keyframes fadeInUp {
-                from { opacity: 0; transform: translateY(40px); }
-                to { opacity: 1; transform: translateY(0); }
-            }
-        </style>
     </head>
     <body class="d-flex flex-column h-100">
         <main class="flex-shrink-0">
@@ -153,7 +67,7 @@
                 <div class="container px-5">
                     <h1 class="fw-bolder fs-3 mb-4">Історія</h1>
                     <div class="timeline-vertical">
-                        <!-- 1964 -->
+                        <!-- 1964-->
                         <div class="timeline-event">
                             <div class="timeline-year">
                                 <div class="year-circle">1964</div>
@@ -165,7 +79,7 @@
                                 <div>Постановою ЦК КПРС Ради Міністрів СРСР № 461 (м. Київ) на базі Київського арматурно-ізоляторного заводу було створено Український філіал ЦКБА.</div>
                             </div>
                         </div>
-                        <!-- 60-ті роки -->
+                        <!-- 60-ті роки-->
                         <div class="timeline-event right">
                             <div class="timeline-year">
                                 <div class="year-circle">60-ті</div>
@@ -177,7 +91,7 @@
                                 <div>Були створені перші оригінальні конструкції арматури для Нововоронезької АЕС, які добре зарекомендували себе вже на експлуатації АЕС. Конструкції впроваджені на АЕС у НДР, Китаї, Індії, експлуатуються на підприємствах нафтохімічного комплексу для різних середовищ і температур, включаючи агресивні.</div>
                             </div>
                         </div>
-                        <!-- 1970 -->
+                        <!-- 1970-->
                         <div class="timeline-event">
                             <div class="timeline-year">
                                 <div class="year-circle">1970</div>
@@ -189,7 +103,7 @@
                                 <div>На базі КМЗ і УФ ЦКБА було створено НВО «Київприладпром». До складу УФ ЦКБА ввійшли СКБ заводу, відділ і лабораторії.</div>
                             </div>
                         </div>
-                        <!-- 1976 -->
+                        <!-- 1976-->
                         <div class="timeline-event right">
                             <div class="timeline-year">
                                 <div class="year-circle">1976</div>
@@ -201,7 +115,7 @@
                                 <div>УФ ЦКБА отримав урядове завдання розробити арматуру для АЕС з новим потужним реактором РБМК-1000, потім розроблялись ряд імпульсно-запобіжних пристроїв.</div>
                             </div>
                         </div>
-                        <!-- 80-ті роки -->
+                        <!-- 80-ті роки-->
                         <div class="timeline-event">
                             <div class="timeline-year">
                                 <div class="year-circle">80-ті</div>
@@ -213,7 +127,7 @@
                                 <div>Були створені комплекси малогабаритних печей (реакторів), які успішно експлуатувалися в різних космічних орбітальних станціях «Салют» і «Мир», кораблях «Союз», «Прогрес», автоматичних міжпланетних станціях «Венера», «Фобос», «Астрон» та інших космічних апаратах.</div>
                             </div>
                         </div>
-                        <!-- 90-ті роки -->
+                        <!-- 90-ті роки-->
                         <div class="timeline-event right">
                             <div class="timeline-year">
                                 <div class="year-circle">90-ті</div>
@@ -225,7 +139,7 @@
                                 <div>ДП «КЦКБА» вдалося вийти з глибокої кризи і відновити виробництво. Було налагоджено постачання арматури для будівництва першої і другої черги Тяньваньської АЕС (Китай), після чого поступово поліпшилися фінансово-економічні показники компанії.</div>
                             </div>
                         </div>
-                        <!-- 2000-ні роки -->
+                        <!-- 2000-ні роки-->
                         <div class="timeline-event">
                             <div class="timeline-year">
                                 <div class="year-circle">2000-ні</div>
@@ -237,7 +151,7 @@
                                 <div>ДП «КЦКБА» було реорганізовано в закрите акціонерне товариство.</div>
                             </div>
                         </div>
-                        <!-- 2006 -->
+                        <!-- 2006-->
                         <div class="timeline-event right">
                             <div class="timeline-year">
                                 <div class="year-circle">2006</div>
@@ -249,7 +163,7 @@
                                 <div>Відбулося об'єднання ЗАТ «КЦКБА / ЗАТ «Арма», що дозволило розширити виробничу базу, отримати нові ринки і перспективи створення освоєння нової продукції.</div>
                             </div>
                         </div>
-                        <!-- 2009 -->
+                        <!-- 2009-->
                         <div class="timeline-event">
                             <div class="timeline-year">
                                 <div class="year-circle">2009</div>
@@ -261,7 +175,7 @@
                                 <div>Проєкт «КЦКБА» в складі Консорціуму, у який також входять: фірма TECHNATOM S.A. (Франція), ТОВ НПП «Імпульс» (Україна), брав участь у виконанні проєкту Євроспільноти Комісії TACIS U2.01 / 05.</div>
                             </div>
                         </div>
-                        <!-- 2014 -->
+                        <!-- 2014-->
                         <div class="timeline-event right">
                             <div class="timeline-year">
                                 <div class="year-circle">2014</div>
@@ -273,7 +187,7 @@
                                 <div>Був завершений перший етап технічного переоснащення ПАТ «КЦКБА».</div>
                             </div>
                         </div>
-                        <!-- 2015 -->
+                        <!-- 2015-->
                         <div class="timeline-event">
                             <div class="timeline-year">
                                 <div class="year-circle">2015</div>

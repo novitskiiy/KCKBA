@@ -15,8 +15,65 @@ html(lang='en')
             include includes/navbar.pug
             // Page content
             section.py-5
-                .container.px-5
-                    h1.fw-bolder.fs-3.mb-4 Арматура для АЕС
-                    p Content for Арматура для АЕС page.
+                .container-fluid
+                    .row
+                        // Left menu
+                        .col-lg-3.mb-4.mb-lg-0
+                            .p-4
+                                h4.mb-4(style='color: #00b300;') Призначення:
+                                .d-grid.gap-2
+                                    a.btn.text-center.py-2(href='products-npp.html', style='background: white; border: 1px solid #dee2e6;') Арматура для АЕС
+                                    a.btn.text-center.py-2(href='products-tpp.html', style='background: white; border: 1px solid #dee2e6;') Арматура для ТЕС
+                                    a.btn.text-center.py-2(href='products-oil-gas.html', style='background: white; border: 1px solid #dee2e6;') Нафтогазова галузь
+                                    a.btn.text-center.py-2(href='products-industrial.html', style='background: white; border: 1px solid #dee2e6;') Загальнопромислова
+                                    a.btn.text-center.py-2(href='products-water.html', style='background: white; border: 1px solid #dee2e6;') Для водоканалів
+                                    a.btn.text-center.py-2(href='products-aviation.html', style='background: white; border: 1px solid #dee2e6;') Для авіації
+                                    a.btn.text-center.py-2(href='products-space.html', style='background: white; border: 1px solid #dee2e6;') Для космосу
+                                    a.btn.text-center.py-2(href='products-special.html', style='background: white; border: 1px solid #dee2e6;') Спеціальна техніка
+                                    a.btn.text-center.py-2(href='products-services.html', style='background: white; border: 1px solid #dee2e6;') Послуги
+                                    a.btn.text-center.py-2(href='products-catalogs.html', style='background: white; border: 1px solid #dee2e6;') Каталоги
+                        // Main content
+                        .col-lg-9
+                            h1.fw-bolder.fs-1.mb-4.text-center Арматура для АЕС
+                            .d-flex.flex-column.align-items-center.position-relative
+                                // Central circle image
+                                .position-relative.mb-4(style='width: 1000px; height: 1000px;')
+                                    .position-absolute.top-50.start-50.translate-middle
+                                        img(src='assets/main_npp.jpg', alt='Арматура для АЕС', style='width: 600px; height: 600px; object-fit: cover; border-radius: 50%;')
+                                    
+                                    // Top
+                                    .position-absolute(style='top: 20px; left: 50%; transform: translateX(-50%); text-align: center;')
+                                        img(src='assets/zapobizhna.png', alt='', style='width: 80px; height: 80px; object-fit: contain;')
+                                        .small.mt-2(style='color: #333;') Запобіжна арматура
+                                    
+                                    // Left
+                                    .position-absolute(style='top: 50%; left: 20px; transform: translateY(-50%); text-align: center;')
+                                        img(src='assets/regul.png', alt='', style='width: 80px; height: 80px; object-fit: contain;')
+                                        .small.mt-2(style='color: #333;') Регулююча арматура
+                                    
+                                    // Right
+                                    .position-absolute(style='top: 50%; right: 20px; transform: translateY(-50%); text-align: center;')
+                                        img(src='assets/zapirna.png', alt='', style='width: 80px; height: 80px; object-fit: contain;')
+                                        .small.mt-2(style='color: #333;') Запірна арматура
+                                    
+                                    // Top Right
+                                    .position-absolute(style='top: 100px; right: 100px; text-align: center;')
+                                        img(src='assets/rozpodil.png', alt='', style='width: 80px; height: 80px; object-fit: contain;')
+                                        .small.mt-2(style='color: #333;') Розподільча арматура
+                                    
+                                    // Bottom Right
+                                    .position-absolute(style='bottom: 100px; right: 100px; text-align: center;')
+                                        img(src='assets/elektromagnitna.jpg', alt='', style='width: 80px; height: 80px; object-fit: contain;')
+                                        .small.mt-2(style='color: #333;') Електромагнітна арматура
+                                    
+                                    // Bottom
+                                    .position-absolute(style='bottom: 20px; left: 50%; transform: translateX(-50%); text-align: center;')
+                                        img(src='assets/zahisna.png', alt='', style='width: 80px; height: 80px; object-fit: contain;')
+                                        .small.mt-2(style='color: #333;') Захисна арматура
+                                    
+                                    // Bottom Left
+                                    .position-absolute(style='bottom: 100px; left: 100px; text-align: center;')
+                                        img(src='assets/probvim.jpg', alt='', style='width: 80px; height: 80px; object-fit: contain;')
+                                        .small.mt-2(style='color: #333;') Система підготовки проб та вимірів
         include includes/footer.pug
         include includes/scripts.pug 
